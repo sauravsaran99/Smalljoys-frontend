@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.css'
+import { Outlet } from 'react-router-dom'
+
+// const apiKey = process.env.REACT_APP_MY_API_KEY;  // Retrieve the environment variable 
+// console.log('API Key:', apiKey);
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    {/* <Login /> */}
+    <Outlet />
+    </>
+  )
 }
 
-export default App;
+export default App
